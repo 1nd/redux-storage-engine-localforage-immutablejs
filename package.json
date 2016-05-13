@@ -1,6 +1,6 @@
 {
   "name": "redux-storage-engine-localforage-immutablejs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Redux Storage engine powered by localForage with support for saving Immutable.js data",
   "main": "build/index.js",
   "scripts": {
@@ -21,6 +21,10 @@
     "localforage",
     "immutable",
     "immutablejs"
+  ],
+  "files": [
+    "build/",
+    "src/"
   ],
   "author": "Pradhana Indra <pradhana.indra@gmail.com>",
   "license": "MIT",
