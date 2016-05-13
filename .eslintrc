@@ -1,0 +1,8 @@
+{
+	"parser"  : "babel-eslint",
+	"extends" : ["airbnb-base"],
+	"rules": {
+		"indent": ["error", "tab"],
+		"space-unary-ops": [2, {"words": true, "nonwords": false}],
+	}
+}
