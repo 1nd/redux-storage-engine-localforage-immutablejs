@@ -7,9 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf build/",
     "build": "./node_modules/.bin/babel src/ --out-dir build",
-    "prepublish": "npm run clean && npm run build",
+    "prepare": "npm run clean && npm run build",
+    "prepublishOnly": "npm run clean && npm run build",
     "lint": "./node_modules/.bin/eslint src/ && ./node_modules/.bin/eslint tests/",
-    "lint-fix":"./node_modules/.bin/eslint --fix src/ && ./node_modules/.bin/eslint --fix tests/"
+    "lint-fix": "./node_modules/.bin/eslint --fix src/ && ./node_modules/.bin/eslint --fix tests/"
   },
   "repository": {
     "type": "git",
