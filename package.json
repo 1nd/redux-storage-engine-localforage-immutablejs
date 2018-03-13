@@ -1,15 +1,16 @@
 {
   "name": "redux-storage-engine-localforage-immutablejs",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Redux Storage engine powered by localForage with support for saving Immutable.js data",
   "main": "build/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf build/",
     "build": "./node_modules/.bin/babel src/ --out-dir build",
-    "prepublish": "npm run clean && npm run build",
+    "prepare": "npm run clean && npm run build",
+    "prepublishOnly": "npm run clean && npm run build",
     "lint": "./node_modules/.bin/eslint src/ && ./node_modules/.bin/eslint tests/",
-    "lint-fix":"./node_modules/.bin/eslint --fix src/ && ./node_modules/.bin/eslint --fix tests/"
+    "lint-fix": "./node_modules/.bin/eslint --fix src/ && ./node_modules/.bin/eslint --fix tests/"
   },
   "repository": {
     "type": "git",
@@ -33,11 +34,9 @@
   },
   "homepage": "https://github.com/1nd/redux-storage-engine-localforage-immutablejs#readme",
   "peerDependencies": {
-    "redux-storage": ">=3.0.0 && <5.0.0"
-  },
-  "dependencies": {
     "immutable": "^3.8.1",
-    "localforage": "^1.4.0"
+    "localforage": "^1.4.0",
+    "redux-storage": ">=3.0.0 && <5.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.8.0",
@@ -46,6 +45,10 @@
     "babel-preset-stage-0": "^6.5.0",
     "eslint": "^2.9.0",
     "eslint-config-airbnb-base": "^3.0.1",
-    "eslint-plugin-import": "^1.7.0"
+    "eslint-plugin-import": "^1.7.0",
+    "immutable": "^3.8.1",
+    "localforage": "^1.4.0",
+    "redux": "^3.7.2",
+    "redux-storage": "^4.1.2"
   }
 }
